@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    color: aliceblue;
+    background-color: #0a1128;
+    background-image: url("/3431361.jpg"); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the entire background */
+    background-attachment: fixed; 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+  }
+}
+
+@layer components {
+  .menuLink {
+    @apply cursor-pointer hover:text-[#f48c06];
+  }
+}
+
+/* HTML Skill Animation */
+@keyframes HTML {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill-bar-html {
+  animation: HTML 2s ease-out forwards;
+}
+
+/* CSS Skill Animation */
+@keyframes CSS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill-bar-css {
+  animation: CSS 2s ease-out forwards;
+}
+
+/* JavaScript Skill Animation */
+@keyframes JavaScript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill-bar-js {
+  animation: JavaScript 2s ease-out forwards;
+}
+
+/* Figma Skill Animation */
+@keyframes Figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.skill-bar-figma {
+  animation: Figma 2s ease-out forwards;
+}
